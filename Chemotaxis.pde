@@ -11,11 +11,11 @@ void setup() {
 void draw() {    
   background(0);
 
-  // flashing target with random color
+
   fill((int)(Math.random()*200), (int)(Math.random()*200), (int)(Math.random()*200));
   ellipse(targetX, targetY, 20, 20);
 
-  // move and show all bacteria
+  // move & show 
   for (int i = 0; i < colony.length; i++) {
     colony[i].move(targetX, targetY);
     colony[i].show();
